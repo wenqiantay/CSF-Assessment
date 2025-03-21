@@ -1,1 +1,4 @@
 # TODO: Task 1.1
+
+#For local import 
+mongoimport -hlocalhost --port=27017 -drestaurantdb -cmenus --jsonArray menus.json
