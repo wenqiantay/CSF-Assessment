@@ -61,8 +61,8 @@ export class PlaceOrderComponent implements OnInit {
       this.receiptSvc.setReceipt(response)
       this.router.navigate(['/confirmation'])
     }).catch(err => {
-      console.error('Order error:', err);
-      alert(err.error?.message || 'Order failed. Please try again.');
+      console.error('Order error:', err)
+      alert(err.error?.message || 'Order failed. Please try again.')
     })
     
   }

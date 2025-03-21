@@ -109,6 +109,7 @@ public class RestaurantController {
     payment.setPayee("Tay Wenqian");
     payment.setPayment(totalAmount);
   
+    // Get receipt from API
     Receipt receipt = this.restaurantSvc.postPayment(payment, newOrder);
     receipt.setTotal(totalAmount);
     System.out.println(receipt.toString());

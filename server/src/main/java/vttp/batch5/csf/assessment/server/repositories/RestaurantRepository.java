@@ -20,7 +20,6 @@ public class RestaurantRepository {
 
     public boolean validateCreditential(String username, String password) {
 
-
         Integer count = jdbcTemplate.queryForObject(SQL_QUERY, Integer.class, username, password);
 
         return count != null && count > 0;

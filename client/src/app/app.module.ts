@@ -18,7 +18,8 @@ import { ReceiptService } from './receipt.service';
 const appRoutes: Routes = [
   {path: '', component: MenuComponent},
   {path: 'placeorder', component: PlaceOrderComponent},
-  {path: 'confirmation', component: ConfirmationComponent}
+  {path: 'confirmation', component: ConfirmationComponent},
+  {path: '**', redirectTo: '', pathMatch: 'full'}
 ]
 
 
